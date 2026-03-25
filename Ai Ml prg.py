@@ -5,7 +5,6 @@ import tkinter as tk
 from datetime import datetime
 
 
-# ---------------- ML MODEL ----------------
 
 data = pd.read_csv("spam.csv")
 
@@ -19,7 +18,6 @@ model = MultinomialNB()
 model.fit(X_vector, y)
 
 
-# ---------------- FUNCTIONS ----------------
 
 def save_history(msg, result):
 
@@ -64,7 +62,6 @@ def clear_text():
     result_label.config(text="")
 
 
-# ---------------- LOGIN ----------------
 
 def login():
 
@@ -81,7 +78,6 @@ def login():
         login_msg.config(text="Wrong login", fg="red")
 
 
-# ---------------- MAIN WINDOW ----------------
 
 def main_window():
 
@@ -137,7 +133,6 @@ def main_window():
     root.mainloop()
 
 
-# ---------------- LOGIN WINDOW ----------------
 
 login_window = tk.Tk()
 login_window.title("Login")
